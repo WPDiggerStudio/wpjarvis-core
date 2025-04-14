@@ -1,25 +1,18 @@
 {
   "name": "wpdigger/wpjarvis-core",
-  "description": "Laravel-style MVC framework for building modern WordPress plugins.",
+  "description": "A Laravel-inspired, MVC-style framework for WordPress plugin development.",
   "type": "library",
   "license": "MIT",
-  "authors": [
-    {
-      "name": "WPDigger Studio",
-      "email": "you@example.com"
-    }
-  ],
   "require": {
-    "php": "^8.1"
+    "php": "^8.1",
+    "illuminate/database": "^10.0",
+    "illuminate/container": "^10.0",
+    "jenssegers/blade": "^1.4",
+    "symfony/var-dumper": "^6.0"
   },
   "autoload": {
     "psr-4": {
       "WPJarvis\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "WPJarvis\\Tests\\": "tests/"
     }
   },
   "require-dev": {
@@ -30,10 +23,5 @@
   "config": {
     "optimize-autoloader": true,
     "sort-packages": true
-  },
-  "scripts": {
-    "post-autoload-dump": [
-      "@php artisan clear-compiled || true"
-    ]
   }
 }
