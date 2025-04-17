@@ -20,7 +20,7 @@ composer require wpjarvis/core
 
 WPJarvis Core is the heart of a Laravel-style plugin development experience for WordPress. It brings modern design patterns — like service providers, facades, dependency injection, event-driven architecture, and Eloquent ORM — to WordPress plugin development.
 
-This package is **not a plugin by itself**, but the **framework core** that powers plugins built using the [WPJarvis scaffold](https://github.com/wpjarvis/wpjarvis).
+This package is **not a plugin by itself**, but the **framework core** that powers plugins built using the [WPJarvis scaffold](https://github.com/WPDiggerStudio/WPJarvis).
 
 ---
 
@@ -89,7 +89,7 @@ composer test
 
 We welcome contributions! Please fork the repo and submit a pull request.
 
-- Report bugs or request features via [GitHub Issues](https://github.com/wpjarvis/core/issues)
+- Report bugs or request features via [GitHub Issues](https://github.com/WPDiggerStudio/wpjarvis-core/issues)
 - Follow PSR-4 and Laravel-style conventions
 - Run tests before submitting a PR
 
@@ -97,11 +97,11 @@ We welcome contributions! Please fork the repo and submit a pull request.
 
 ## 📜 License
 
-MIT © [WPJarvis Team](https://wpjarvis.io)
+MIT © [UPDigger & UPRootApps Team](https://uprootapps.com)
 
 ---
 
 ## 🧭 Next Steps
 
 📖 Check out the **[Documentation »](https://github.com/wpjarvis/core/wiki)**  
-To get started building your plugin, install the scaffold tool: [wpjarvis](https://github.com/wpjarvis/wpjarvis)
+To get started building your plugin, install the scaffold tool: [WPJarvis](https://github.com/WPDiggerStudio/WPJarvis)
