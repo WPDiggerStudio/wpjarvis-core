@@ -1,0 +1,74 @@
+{
+  "name": "wpjarvis/core",
+  "description": "A Laravel-inspired modular framework for modern WordPress plugin development.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "WPJarvis Team",
+      "email": "dev@wpjarvis.io",
+      "homepage": "https://wpjarvis.io",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "laravel",
+    "framework",
+    "plugin",
+    "wp-plugin",
+    "dependency-injection",
+    "eloquent",
+    "wpjarvis"
+  ],
+  "homepage": "https://github.com/wpjarvis/core",
+  "support": {
+    "issues": "https://github.com/wpjarvis/core/issues",
+    "source": "https://github.com/wpjarvis/core"
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/container": "^9.0|^10.0",
+    "illuminate/support": "^9.0|^10.0",
+    "illuminate/database": "^9.0|^10.0",
+    "illuminate/events": "^9.0|^10.0",
+    "illuminate/config": "^9.0|^10.0",
+    "illuminate/validation": "^9.0|^10.0",
+    "illuminate/view": "^9.0|^10.0",
+    "illuminate/console": "^9.0|^10.0",
+    "illuminate/filesystem": "^9.0|^10.0",
+    "symfony/http-foundation": "^6.0",
+    "illuminate/queue": "^9.0|^10.0",
+    "illuminate/bus": "^9.0|^10.0",
+    "vlucas/phpdotenv": "^5.5",
+    "monolog/monolog": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5|^10.0",
+    "mockery/mockery": "^1.5",
+    "brain/monkey": "^2.6",
+    "symfony/var-dumper": "^6.0",
+    "wp-cli/wp-cli": "^v2.11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WPJarvis\\Core\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WPJarvis\\Core\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}

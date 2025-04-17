@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        bootstrap="tests/bootstrap.php"
+        colors="true"
+        verbose="true"
+        stopOnFailure="false"
+        backupGlobals="false"
+        convertWarningsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertDeprecationsToExceptions="true"
+        failOnRisky="true"
+        failOnIncomplete="true"
+        failOnSkipped="false"
+        cacheResult="true"
+        cacheDirectory=".phpunit.cache"
+>
+    <testsuites>
+        <testsuite name="WPJarvis Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+    </coverage>
+
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="WP_ENV" value="testing"/>
+        <env name="WP_DEBUG" value="true"/>
+        <env name="BRAIN_MONKEY_ENABLED" value="1"/>
+    </php>
+</phpunit>
