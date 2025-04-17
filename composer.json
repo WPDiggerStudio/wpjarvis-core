@@ -5,9 +5,9 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "WPJarvis Team",
-      "email": "dev@wpjarvis.io",
-      "homepage": "https://wpjarvis.io",
+      "name": "WPDigger & UPRootApps Team",
+      "email": "info@uprootapps.com",
+      "homepage": "https://uprootapps.com",
       "role": "Developer"
     }
   ],
@@ -21,10 +21,10 @@
     "eloquent",
     "wpjarvis"
   ],
-  "homepage": "https://github.com/wpjarvis/core",
+  "homepage": "https://github.com/WPDiggerStudio/wpjarvis-core",
   "support": {
-    "issues": "https://github.com/wpjarvis/core/issues",
-    "source": "https://github.com/wpjarvis/core"
+    "issues": "https://github.com/WPDiggerStudio/wpjarvis-coreissues",
+    "source": "https://github.com/WPDiggerStudio/wpjarvis-core"
   },
   "require": {
     "php": "^8.0",
