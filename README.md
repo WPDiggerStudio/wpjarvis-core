@@ -13,7 +13,7 @@ Built for developers who want structure, speed, and simplicity when building sca
 Install via Composer:
 
 ```bash
-composer require wpjarvis/core
+composer require wpdiggerstudio/wpjarvis-core
 ```
 
 Ensure you have Composer installed and available in your PATH. If you're setting up a project using the WPJarvis scaffold, you'll also need to install the [wpjarvis](https://github.com/WPDiggerStudio/WPJarvis) CLI tool.
