@@ -25,7 +25,7 @@ if (!function_exists('upap_app')) {
 if (!function_exists('upap_config')) {
     function upap_config(string|array|null $key = null, mixed $default = null): mixed
     {
-        $config = app('config');
+        $config = upap_app('config');
 
         if (is_null($key)) return $config;
 
@@ -46,7 +46,7 @@ if (!function_exists('upap_config')) {
 if (!function_exists('upap_view')) {
     function upap_view(string $view = null, array $data = [], array $mergeData = []): mixed
     {
-        $factory = app('view');
+        $factory = upap_app('view');
 
         if (func_num_args() === 0) {
             return $factory;
@@ -62,14 +62,14 @@ if (!function_exists('upap_view')) {
 if (!function_exists('upap_base_path')) {
     function upap_base_path(string $path = ''): string
     {
-        return app()->basePath($path);
+        return upap_app()->basePath($path);
     }
 }
 
 if (!function_exists('upap_plugin_path')) {
     function upap_plugin_path(string $path = ''): string
     {
-        return app()->pluginPath($path);
+        return upap_app()->pluginPath($path);
     }
 }
 
@@ -93,14 +93,14 @@ if (!function_exists('upap_storage_path')) {
 if (!function_exists('upap_route')) {
     function upap_route(string $name, array $parameters = [], bool $absolute = true): string
     {
-        return app('router')->route($name, $parameters, $absolute);
+        return upap_app('router')->route($name, $parameters, $absolute);
     }
 }
 
 if (!function_exists('upap_redirect')) {
     function upap_redirect(string $to = '', int $status = 302, array $headers = [], bool $secure = null): mixed
     {
-        return app('response')->redirect($to, $status)->setHeaders($headers);
+        return upap_app('response')->redirect($to, $status)->setHeaders($headers);
     }
 }
 
@@ -110,7 +110,7 @@ if (!function_exists('upap_redirect')) {
 if (!function_exists('upap_request')) {
     function upap_request(array|string|null $key = null, mixed $default = null): mixed
     {
-        $req = app(Request::class);
+        $req = upap_app(Request::class);
 
         if (is_null($key)) {
             return $req;
@@ -137,7 +137,7 @@ if (!function_exists('upap_response')) {
 if (!function_exists('upap_validator')) {
     function upap_validator(array $data = [], array $rules = [], array $messages = [], array $customAttributes = []): Validator|\Illuminate\Contracts\Validation\Validator
     {
-        $factory = app('validator');
+        $factory = upap_app('validator');
 
         if (func_num_args() === 0) {
             return $factory;
@@ -153,7 +153,7 @@ if (!function_exists('upap_validator')) {
 if (!function_exists('upap_event')) {
     function upap_event(string|object $event, mixed $payload = [], bool $halt = false): mixed
     {
-        return app('events')->dispatch($event, $payload, $halt);
+        return upap_app('events')->dispatch($event, $payload, $halt);
     }
 }
 
@@ -187,7 +187,7 @@ if (!function_exists('upap_wpj_filter')) {
 if (!function_exists('upap_wpj_db')) {
     function upap_wpj_db(string $connection = null): \WPJarvis\Core\Database\Connection
     {
-        return app('db')->connection($connection);
+        return upap_app('db')->connection($connection);
     }
 }
 
@@ -204,7 +204,7 @@ if (!function_exists('upap_now')) {
 if (!function_exists('upap_logger')) {
     function upap_logger(string $message = null, array $context = []): mixed
     {
-        $log = app('log');
+        $log = upap_app('log');
 
         if (is_null($message)) {
             return $log;
