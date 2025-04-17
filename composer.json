@@ -1,5 +1,5 @@
 {
-  "name": "wpjarvis/core",
+  "name": "wpdiggerstudio/wpjarvis-core",
   "description": "A Laravel-inspired modular framework for modern WordPress plugin development.",
   "type": "library",
   "license": "MIT",
